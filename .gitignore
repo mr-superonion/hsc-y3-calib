@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+test_*.fits
 
 # C extensions
 *.so

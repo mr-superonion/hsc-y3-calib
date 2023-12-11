@@ -6,6 +6,17 @@ import numpy as np
 from astropy.table import Table
 import utils
 
+def fix_nan(catalog):
+    """
+    Routine to fix NaN entries.
+    """
+    for key in catalog.colnames:
+        x = catalog[key]
+        mask = np.isnan(x) | np.isinf(x)
+        n_fix = mask.astype(int).sum()
+        if n_fix > 0:
+            catalog[key][mask] = 0.
+
 def main(input_fname, output_fname):
     """
     Main function to output a FITS catalog with calibrations and weights, given
@@ -25,6 +36,7 @@ def main(input_fname, output_fname):
     """
     data =  Table.read(input_fname)
     out =  utils.make_reGauss_calibration_table(data)
+    fix_nan(out)
     out.write(output_fname, overwrite=True)
     return
 

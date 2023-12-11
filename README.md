@@ -4,7 +4,7 @@ from the HSC SSP survey ([catalog
 paper](https://ui.adsabs.harvard.edu/abs/2022PASJ...74..421L/abstract)). The
 software is available for use under a BSD 3-clause license contained in the
 file [LICENSE.md](LICENSE). See
-[here](https://github.com/PrincetonUniversity/hsc-y1-shear-calib/blob/main/gen_hsc_calibrations.py)
+[here](https://github.com/PrincetonUniversity/hsc-y1-shear-calib/blob/main)
 for the hsc first-year (S16A) calibration.
 
 Currently the script [gen_hsc_calibrations.py](gen_hsc_calibrations.py) is set
