@@ -1,7 +1,9 @@
 This repository contains open-source python software that provides the weight
 and calibration factors associated with the three-year (S19A) shape catalog
-from the HSC SSP survey (catalog paper). The software is available for use
-under a BSD 3-clause license contained in the file [LICENSE.md](LICENSE). See
+from the HSC SSP survey ([catalog
+paper](https://ui.adsabs.harvard.edu/abs/2022PASJ...74..421L/abstract)). The
+software is available for use under a BSD 3-clause license contained in the
+file [LICENSE.md](LICENSE). See
 [here](https://github.com/PrincetonUniversity/hsc-y1-shear-calib/blob/main/gen_hsc_calibrations.py)
 for the hsc first-year (S16A) calibration.
 
@@ -15,3 +17,9 @@ used for ensemble weak lensing shear estimation. (The contents of
 with them directly.) For information about dependencies, command-line
 arguments, and memory usage, please read the docstring for
 [gen_hsc_calibrations.py](gen_hsc_calibrations.py).
+
+## required packages
++ numpy
++ astropy
+
+
