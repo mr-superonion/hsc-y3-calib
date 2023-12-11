@@ -8,18 +8,17 @@ file [LICENSE.md](LICENSE). See
 for the hsc first-year (S16A) calibration.
 
 Currently the script [gen_hsc_calibrations.py](gen_hsc_calibrations.py) is set
-up to read in a FITS catalog containing the outputs from Rubin’s LSST Science
-Pipelines, including re-Gaussianization shape measurements and CModel
-magnitudes and errors, and produce a catalog with the additional quantities
-used for ensemble weak lensing shear estimation. (The contents of
-[utilities.py](utilities.py) and of data/ are accessed by
-[gen_hsc_calibrations.py](gen_hsc_calibrations.py), but users need not interact
-with them directly.) For information about dependencies, command-line
-arguments, and memory usage, please read the docstring for
-[gen_hsc_calibrations.py](gen_hsc_calibrations.py).
+up to read in a FITS catalog containing the columns downloaed from the HSC data
+base , including re-Gaussianization shape measurements and CModel magnitudes
+and errors, and produce a catalog with the quantities used for ensemble weak
+lensing shear estimation. (The contents of [utilities.py](utilities.py) and of
+data/ are accessed by [gen_hsc_calibrations.py](gen_hsc_calibrations.py), but
+users need not interact with them directly.) For information about
+dependencies, command-line arguments, and memory usage, please read the
+docstring for [gen_hsc_calibrations.py](gen_hsc_calibrations.py).
 
 ## required packages
 + numpy
++ scipy
 + astropy
-
 

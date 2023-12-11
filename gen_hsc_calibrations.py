@@ -23,11 +23,9 @@ def main(input_fname, output_fname):
     and numpy.
 
     """
-
-
     data =  Table.read(input_fname)
-    data =  utils.update_reGaus_calibration(data)
-    data.write(output_fname, overwrite=True)
+    out =  utils.make_reGauss_calibration_table(data)
+    out.write(output_fname, overwrite=True)
     return
 
 if __name__=='__main__':
