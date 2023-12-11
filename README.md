@@ -1,3 +1,17 @@
-This repository contains open-source python software that provides the weight and calibration factors associated with the three-year (S19A) shape catalog from the HSC SSP survey (catalog description, catalog paper, simulation paper). The software is available for use under a BSD 3-clause license contained in the file LICENSE.md.
+This repository contains open-source python software that provides the weight
+and calibration factors associated with the three-year (S19A) shape catalog
+from the HSC SSP survey (catalog paper). The software is available for use
+under a BSD 3-clause license contained in the file [LICENSE.md](LICENSE). See
+[here](https://github.com/PrincetonUniversity/hsc-y1-shear-calib/blob/main/gen_hsc_calibrations.py)
+for the hsc first-year (S16A) calibration.
 
-Currently the script gen_hsc_calibrations.py is set up to read in a FITS catalog containing the outputs from Rubin’s LSST Science Pipelines, including re-Gaussianization shape measurements and cmodel magnitudes and errors, and produce a catalog with the additional quantities used for ensemble weak lensing shear estimation. (The contents of utilities.py and of data/ are accessed by gen_hsc_calibrations.py, but users need not interact with them directly.) For information about dependencies, command-line arguments, and memory usage, please read the docstring for gen_hsc_calibrations.py; the docstring will also be output to the terminal if you call the script without any arguments.
+Currently the script [gen_hsc_calibrations.py](gen_hsc_calibrations.py) is set
+up to read in a FITS catalog containing the outputs from Rubin’s LSST Science
+Pipelines, including re-Gaussianization shape measurements and CModel
+magnitudes and errors, and produce a catalog with the additional quantities
+used for ensemble weak lensing shear estimation. (The contents of
+[utilities.py](utilities.py) and of data/ are accessed by
+[gen_hsc_calibrations.py](gen_hsc_calibrations.py), but users need not interact
+with them directly.) For information about dependencies, command-line
+arguments, and memory usage, please read the docstring for
+[gen_hsc_calibrations.py](gen_hsc_calibrations.py).
